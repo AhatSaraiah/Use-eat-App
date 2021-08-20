@@ -10,15 +10,23 @@ import UIKit
 class TableViewController: UITableViewController, UISearchBarDelegate {
     let data = ["a","b","c"]
     var restaurants: [Restaurant] = []
+   // let rs: Restaurant!
     var filterRestaurants:[Restaurant]!
-   
     @IBOutlet weak var searchBar: UISearchBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        guard let img1 = UIImage(named: "./Assets.xcassets/burger.png") else { return }
+        guard let img2 = UIImage(named: "./Assets.xcassets/chicken.png") else { return }
+
+        let r1 = Restaurant(data: [ "id": "0" ,"name":"Burgers" ,"distance":1.5,"description":"burger and chips","image":img1])
+        
+        let r2 = Restaurant(data:["id":"0" ,"name":"Burgers" ,"distance":1.8,"description":"burger and chips","image":img2])
+        
         searchBar.delegate = self
-        let rs = Restaurant.init(data: )
-     //   restaurants.append()
-        filterRestaurants = restaurants
+
+        restaurants.append(r1)
+        restaurants.append(r2)
     }
 
     // MARK: - Table view data source
@@ -34,8 +42,11 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as UITableViewCell
-        cell.textLabel?.text = filterRestaurants[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")! as! RestaurantTableViewCell
+        
+        let theRestaurant = restaurants[indexPath.row]
+        cell.textLabel?.text = theRestaurant.name
+        cell.imageView?.image = theRestaurant.image
         
         return cell
     }
@@ -52,34 +63,5 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         }
         self.tableView.reloadData()
     }
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
 }
+

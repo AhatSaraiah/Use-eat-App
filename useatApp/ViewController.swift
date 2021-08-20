@@ -28,30 +28,9 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
        
-//
-//    @objc func didTapLoginButton() {
-//        let loginManager = FirebaseAuthManager()
-//        guard let email = emailTextField.text, let password = passwordTextField.text else { return }
-//        loginManager.signIn(email: email, pass: password) {[weak self] (success) in
-//            guard let `self` = self else { return }
-//            var message: String = ""
-//            if (success) {
-//                message = "User was sucessfully logged in."
-//            } else {
-//                message = "There was an error."
-//            }
-//            let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-//            alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
-//            self.display(alertController: alertController)
-//        }
-//    }
-//
-//    func display(alertController: UIAlertController) {
-//        self.present(alertController, animated: true, completion: nil)
-//    }
+
     
-    
-    @IBAction func loginTapped(_ sender: Any) {
+    @IBAction func loginTapped(_ sender: UIButton!) {
         
         // TODO: Validate Text Fields
             
@@ -70,13 +49,23 @@ class ViewController: UIViewController {
                 }
                 else {
                     print("login successfuly")
-                    self.transitionToHome();
+           //         self.transitionToHome();
                 }
             }
     
   }
-    func transitionToHome() {
-        let newViewController = HomeViewController()
-        self.navigationController?.pushViewController(newViewController, animated: true)
-    }
+//    func transitionToHome() {
+//        let newViewController = TableViewController()
+//        self.navigationController?.pushViewController(newViewController, animated: true)
+//
+//    }
+    
+//    func transition(Sender: UIButton!) {
+//        let secondViewController:SecondViewController = SecondViewController()
+//
+//        self.presentViewController(secondViewController, animated: true, completion: nil)
+//
+//     }
+    
+    
 }

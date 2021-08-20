@@ -17,10 +17,10 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var backButton: UIBarButtonItem!
-    @IBOutlet weak var errorLabel: UILabel!
+ //   @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        errorLabel.alpha = 0
+   //     errorLabel.alpha = 0
     //    backButton.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
        // var ref: DatabaseReference!
        /// ref = Database.database().reference()
@@ -52,8 +52,8 @@ class RegisterViewController: UIViewController {
 //
 //            return "Please fill in all fields."
 //        }
-//
-//        // Check if the password is secure
+
+        // Check if the password is secure
 //        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
 //
 //        if Utilities.isPasswordValid(cleanedPassword) == false {
@@ -63,20 +63,20 @@ class RegisterViewController: UIViewController {
 //
 //        return nil
 //      }
-//
+
 
     
     @IBAction func signUpTapped(_ sender: Any) {
         
         // Validate the fields
-         //     let error = validateFields()
+             // let error = validateFields()
               
-         //     if error != nil {
+//              if error != nil {
                   
-                  // There's something wrong with the fields, show error message
-         //         showError(error!)
-        //      }
-        //      else {
+               //    There's something wrong with the fields, show error message
+                //  showError(error!)
+//              }
+          //    else {
                   
                   // Create cleaned versions of the data
                   let name = nameTextField.text!
@@ -88,12 +88,12 @@ class RegisterViewController: UIViewController {
                   Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
                       
                       // Check for errors
-                //      if err != nil {
+                    //  if err != nil {
                           
-                          // There was an error creating the user
-                      //    self.showError("Error creating user")
-                 //     }
-                 //     else {
+                       //    There was an error creating the user
+                        //  self.showError("Error creating user")
+                    //  }
+               //       else {
                           
                           // User was created successfully, now store the name
                           let db = Firestore.firestore()
@@ -101,29 +101,29 @@ class RegisterViewController: UIViewController {
                         db.collection("users").addDocument(data: ["name":name,"aboutMe": aboutMe
                                                                   ,"uid": result!.user.uid ]) { (error) in
                               
-                       //       if error != nil {
-                                  // Show error message
-                      //            self.showError("Error saving user data")
-                             // }
+//                              if error != nil {
+//                              //     Show error message
+//                                  self.showError("Error saving user data")
+//                              }
                         //  }
                           
                           //Transition to the home screen
                           self.transitionToHome()
-                      }
+                      //}
                                         
              }
                                        
          }
- //  }
-          func showError(_ message:String) {
-              
-              errorLabel.text = message
-              errorLabel.alpha = 1
-           }
+   }
+//          func showError(_ message:String) {
+//
+//              errorLabel.text = message
+//              errorLabel.alpha = 1
+//           }
     
     func transitionToHome() {
 
-        let newViewController = HomeViewController()
+        let newViewController = TableViewController()
         self.navigationController?.pushViewController(newViewController, animated: true)
     }
     

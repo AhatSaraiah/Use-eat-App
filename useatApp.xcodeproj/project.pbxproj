@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1D0F420F2697BD5900B98038 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F420E2697BD5900B98038 /* RegisterViewController.swift */; };
-		1D0F42112697C5AB00B98038 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D0F42102697C5AB00B98038 /* GoogleService-Info.plist */; };
 		1D7532A926835525002D9075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7532A826835525002D9075 /* AppDelegate.swift */; };
 		1D7532AB26835525002D9075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7532AA26835525002D9075 /* SceneDelegate.swift */; };
 		1D7532AD26835525002D9075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7532AC26835525002D9075 /* ViewController.swift */; };
@@ -16,9 +15,8 @@
 		1D7532B226835525002D9075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7532B126835525002D9075 /* Assets.xcassets */; };
 		1D7532B526835525002D9075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7532B326835525002D9075 /* LaunchScreen.storyboard */; };
 		1D9E71F826BC0BE800764832 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9E71F726BC0BE800764832 /* TableViewController.swift */; };
-		1D9F533926B5E8CF00F0EA0F /* FirebaseAuthManager .swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F533826B5E8CF00F0EA0F /* FirebaseAuthManager .swift */; };
 		1D9F533B26B6096D00F0EA0F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9F533A26B6096D00F0EA0F /* Utilities.swift */; };
-		1DC2838426BF140C00E02A7B /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2838326BF140C00E02A7B /* Restaurant.swift */; };
+		1DC2838426BF140C00E02A7B /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2838326BF140C00E02A7B /* models.swift */; };
 		1DC2838626BF177600E02A7B /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC2838526BF177600E02A7B /* RestaurantTableViewCell.swift */; };
 		1DD39EC526B739490098D299 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39EC426B739490098D299 /* FirebaseFirestore */; };
 		1DD39EC726B739490098D299 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39EC626B739490098D299 /* FirebaseDatabase */; };
@@ -28,12 +26,11 @@
 		1DD39ECF26B739490098D299 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39ECE26B739490098D299 /* FirebaseInAppMessagingSwift-Beta */; };
 		1DD39ED126B739490098D299 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39ED026B739490098D299 /* FirebaseAuth */; };
 		1DD39ED326B739490098D299 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39ED226B739490098D299 /* FirebaseInAppMessaging-Beta */; };
-		1DE8E13326B56CBF00B2DE19 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE8E13226B56CBF00B2DE19 /* HomeViewController.swift */; };
+		6992D7FA26CFA583009422BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6992D7F926CFA583009422BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D0F420E2697BD5900B98038 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		1D0F42102697C5AB00B98038 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1D7532A526835525002D9075 /* useatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = useatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7532A826835525002D9075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D7532AA26835525002D9075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,11 +40,10 @@
 		1D7532B426835525002D9075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D7532B626835525002D9075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D9E71F726BC0BE800764832 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		1D9F533826B5E8CF00F0EA0F /* FirebaseAuthManager .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FirebaseAuthManager .swift"; sourceTree = "<group>"; };
 		1D9F533A26B6096D00F0EA0F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		1DC2838326BF140C00E02A7B /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1DC2838326BF140C00E02A7B /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
 		1DC2838526BF177600E02A7B /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
-		1DE8E13226B56CBF00B2DE19 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6992D7F926CFA583009422BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				1D9F533A26B6096D00F0EA0F /* Utilities.swift */,
-				1D9F533826B5E8CF00F0EA0F /* FirebaseAuthManager .swift */,
 				1D7532A826835525002D9075 /* AppDelegate.swift */,
 				1D7532AA26835525002D9075 /* SceneDelegate.swift */,
 				1D7532AC26835525002D9075 /* ViewController.swift */,
@@ -98,11 +93,10 @@
 				1D7532B126835525002D9075 /* Assets.xcassets */,
 				1D7532B326835525002D9075 /* LaunchScreen.storyboard */,
 				1D7532B626835525002D9075 /* Info.plist */,
-				1D0F42102697C5AB00B98038 /* GoogleService-Info.plist */,
-				1DE8E13226B56CBF00B2DE19 /* HomeViewController.swift */,
 				1D9E71F726BC0BE800764832 /* TableViewController.swift */,
-				1DC2838326BF140C00E02A7B /* Restaurant.swift */,
+				1DC2838326BF140C00E02A7B /* models.swift */,
 				1DC2838526BF177600E02A7B /* RestaurantTableViewCell.swift */,
+				6992D7F926CFA583009422BC /* GoogleService-Info.plist */,
 			);
 			path = useatApp;
 			sourceTree = "<group>";
@@ -178,7 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D7532B526835525002D9075 /* LaunchScreen.storyboard in Resources */,
-				1D0F42112697C5AB00B98038 /* GoogleService-Info.plist in Resources */,
+				6992D7FA26CFA583009422BC /* GoogleService-Info.plist in Resources */,
 				1D7532B226835525002D9075 /* Assets.xcassets in Resources */,
 				1D7532B026835525002D9075 /* Main.storyboard in Resources */,
 			);
@@ -196,11 +190,9 @@
 				1D7532A926835525002D9075 /* AppDelegate.swift in Sources */,
 				1D9F533B26B6096D00F0EA0F /* Utilities.swift in Sources */,
 				1D9E71F826BC0BE800764832 /* TableViewController.swift in Sources */,
-				1D9F533926B5E8CF00F0EA0F /* FirebaseAuthManager .swift in Sources */,
 				1D7532AB26835525002D9075 /* SceneDelegate.swift in Sources */,
-				1DE8E13326B56CBF00B2DE19 /* HomeViewController.swift in Sources */,
 				1D0F420F2697BD5900B98038 /* RegisterViewController.swift in Sources */,
-				1DC2838426BF140C00E02A7B /* Restaurant.swift in Sources */,
+				1DC2838426BF140C00E02A7B /* models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

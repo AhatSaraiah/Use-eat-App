@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7SE-Ya-QJ2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -106,6 +106,7 @@
                                 </state>
                                 <connections>
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uSb-Ws-uRd"/>
+                                    <segue destination="7SE-Ya-QJ2" kind="presentation" modalPresentationStyle="fullScreen" id="8a9-kJ-G9b"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hw-QW-fNC">
@@ -416,16 +417,16 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6m-9S-LST">
-                                            <rect key="frame" x="20" y="0.0" width="374" height="191"/>
+                                            <rect key="frame" x="20" y="11" width="374" height="169"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rgr-11-FtY">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="191"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="169"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="uX9-wb-7Nf">
-                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="151"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="374" height="129"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3wd-DZ-vMS">
-                                                            <rect key="frame" x="0.0" y="167" width="374" height="24"/>
+                                                            <rect key="frame" x="0.0" y="145" width="374" height="24"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="reataurant name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-4h-gKJ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="248.5" height="24"/>
@@ -466,12 +467,10 @@
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="I6m-9S-LST" firstAttribute="top" secondItem="yiE-7i-QUI" secondAttribute="top" id="3me-bA-iP8"/>
                                         <constraint firstItem="I6m-9S-LST" firstAttribute="leading" secondItem="yiE-7i-QUI" secondAttribute="leadingMargin" id="EXk-02-ziz"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="I6m-9S-LST" secondAttribute="bottom" id="Hbs-Xh-H5O"/>
                                         <constraint firstItem="I6m-9S-LST" firstAttribute="leading" secondItem="yiE-7i-QUI" secondAttribute="leadingMargin" id="Jl1-2s-SNY"/>
                                         <constraint firstItem="I6m-9S-LST" firstAttribute="top" secondItem="yiE-7i-QUI" secondAttribute="topMargin" id="YUw-Gj-rAa"/>
-                                        <constraint firstAttribute="bottom" secondItem="I6m-9S-LST" secondAttribute="bottom" id="eNG-uL-HfE"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="I6m-9S-LST" secondAttribute="trailing" id="m5x-OB-6xl"/>
                                     </constraints>
                                 </tableViewCellContentView>
