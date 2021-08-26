@@ -1,9 +1,3 @@
-//
-//  AppDelegate.swift
-//  useatApp
-//
-//  Created by user196211 on 6/23/21.
-//
 
 import UIKit
 import Firebase

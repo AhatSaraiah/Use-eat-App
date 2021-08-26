@@ -1,16 +1,9 @@
-//
-//  TableViewController.swift
-//  useatApp
-//
-//  Created by user196211 on 8/5/21.
-//
 
 import UIKit
 
 class TableViewController: UITableViewController, UISearchBarDelegate {
-    let data = ["a","b","c"]
-    var restaurants: [Restaurant] = []
-   // let rs: Restaurant!
+//    let data = ["a","b","c"]
+    var restaurants = [Restaurant]()
     var filterRestaurants:[Restaurant]!
     @IBOutlet weak var searchBar: UISearchBar!
     
@@ -21,7 +14,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
 
         let r1 = Restaurant(data: [ "id": "0" ,"name":"Burgers" ,"distance":1.5,"description":"burger and chips","image":img1])
         
-        let r2 = Restaurant(data:["id":"0" ,"name":"Burgers" ,"distance":1.8,"description":"burger and chips","image":img2])
+        let r2 = Restaurant(data:["id":"1" ,"name":"chikcen" ,"distance":1.8,"description":"chicken meal","image":img2])
         
         searchBar.delegate = self
 
@@ -47,6 +40,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         let theRestaurant = restaurants[indexPath.row]
         cell.textLabel?.text = theRestaurant.name
         cell.imageView?.image = theRestaurant.image
+      //  cell.distance?.text = theRestaurant.distance
         
         return cell
     }

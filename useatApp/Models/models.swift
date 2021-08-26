@@ -32,3 +32,5 @@ struct Association {
         self.image = data["image"] as! UIImage
     }
 }
+
+

@@ -10,7 +10,7 @@
 		1D0F420F2697BD5900B98038 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0F420E2697BD5900B98038 /* RegisterViewController.swift */; };
 		1D7532A926835525002D9075 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7532A826835525002D9075 /* AppDelegate.swift */; };
 		1D7532AB26835525002D9075 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7532AA26835525002D9075 /* SceneDelegate.swift */; };
-		1D7532AD26835525002D9075 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7532AC26835525002D9075 /* ViewController.swift */; };
+		1D7532AD26835525002D9075 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7532AC26835525002D9075 /* LoginViewController.swift */; };
 		1D7532B026835525002D9075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7532AE26835525002D9075 /* Main.storyboard */; };
 		1D7532B226835525002D9075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D7532B126835525002D9075 /* Assets.xcassets */; };
 		1D7532B526835525002D9075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7532B326835525002D9075 /* LaunchScreen.storyboard */; };
@@ -26,6 +26,9 @@
 		1DD39ECF26B739490098D299 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39ECE26B739490098D299 /* FirebaseInAppMessagingSwift-Beta */; };
 		1DD39ED126B739490098D299 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39ED026B739490098D299 /* FirebaseAuth */; };
 		1DD39ED326B739490098D299 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 1DD39ED226B739490098D299 /* FirebaseInAppMessaging-Beta */; };
+		6991304526D76964007DBC74 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991304426D76964007DBC74 /* MessageViewController.swift */; };
+		6991304726D77276007DBC74 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6991304626D77276007DBC74 /* ChatViewController.swift */; };
+		6991304A26D7740C007DBC74 /* MessageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6991304926D7740C007DBC74 /* MessageKit */; };
 		6992D7FA26CFA583009422BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6992D7F926CFA583009422BC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +37,7 @@
 		1D7532A526835525002D9075 /* useatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = useatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D7532A826835525002D9075 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D7532AA26835525002D9075 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D7532AC26835525002D9075 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1D7532AC26835525002D9075 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		1D7532AF26835525002D9075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D7532B126835525002D9075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D7532B426835525002D9075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -43,6 +46,8 @@
 		1D9F533A26B6096D00F0EA0F /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		1DC2838326BF140C00E02A7B /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
 		1DC2838526BF177600E02A7B /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		6991304426D76964007DBC74 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		6991304626D77276007DBC74 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		6992D7F926CFA583009422BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +59,7 @@
 				1DD39EC926B739490098D299 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				1DD39EC726B739490098D299 /* FirebaseDatabase in Frameworks */,
 				1DD39ECB26B739490098D299 /* FirebaseAnalytics in Frameworks */,
+				6991304A26D7740C007DBC74 /* MessageKit in Frameworks */,
 				1DD39ED326B739490098D299 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				1DD39ECD26B739490098D299 /* FirebaseStorage in Frameworks */,
 				1DD39ECF26B739490098D299 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
@@ -84,21 +90,63 @@
 		1D7532A726835525002D9075 /* useatApp */ = {
 			isa = PBXGroup;
 			children = (
+				6991304E26D78D6A007DBC74 /* Resources */,
+				6991304D26D78D58007DBC74 /* Controllers */,
+				6991304C26D78D46007DBC74 /* Models */,
+				6991304B26D78D2B007DBC74 /* Views */,
 				1D9F533A26B6096D00F0EA0F /* Utilities.swift */,
-				1D7532A826835525002D9075 /* AppDelegate.swift */,
-				1D7532AA26835525002D9075 /* SceneDelegate.swift */,
-				1D7532AC26835525002D9075 /* ViewController.swift */,
-				1D0F420E2697BD5900B98038 /* RegisterViewController.swift */,
-				1D7532AE26835525002D9075 /* Main.storyboard */,
-				1D7532B126835525002D9075 /* Assets.xcassets */,
-				1D7532B326835525002D9075 /* LaunchScreen.storyboard */,
 				1D7532B626835525002D9075 /* Info.plist */,
-				1D9E71F726BC0BE800764832 /* TableViewController.swift */,
-				1DC2838326BF140C00E02A7B /* models.swift */,
-				1DC2838526BF177600E02A7B /* RestaurantTableViewCell.swift */,
 				6992D7F926CFA583009422BC /* GoogleService-Info.plist */,
 			);
 			path = useatApp;
+			sourceTree = "<group>";
+		};
+		6991304B26D78D2B007DBC74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6991304F26D78E88007DBC74 /* Storyboards */,
+				1D7532B126835525002D9075 /* Assets.xcassets */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6991304C26D78D46007DBC74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1DC2838326BF140C00E02A7B /* models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6991304D26D78D58007DBC74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1DC2838526BF177600E02A7B /* RestaurantTableViewCell.swift */,
+				6991304626D77276007DBC74 /* ChatViewController.swift */,
+				1D9E71F726BC0BE800764832 /* TableViewController.swift */,
+				1D7532AC26835525002D9075 /* LoginViewController.swift */,
+				6991304426D76964007DBC74 /* MessageViewController.swift */,
+				1D0F420E2697BD5900B98038 /* RegisterViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6991304E26D78D6A007DBC74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D7532A826835525002D9075 /* AppDelegate.swift */,
+				1D7532AA26835525002D9075 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6991304F26D78E88007DBC74 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1D7532B326835525002D9075 /* LaunchScreen.storyboard */,
+				1D7532AE26835525002D9075 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +174,7 @@
 				1DD39ECE26B739490098D299 /* FirebaseInAppMessagingSwift-Beta */,
 				1DD39ED026B739490098D299 /* FirebaseAuth */,
 				1DD39ED226B739490098D299 /* FirebaseInAppMessaging-Beta */,
+				6991304926D7740C007DBC74 /* MessageKit */,
 			);
 			productName = useatApp;
 			productReference = 1D7532A526835525002D9075 /* useatApp.app */;
@@ -156,6 +205,7 @@
 			mainGroup = 1D75329C26835524002D9075;
 			packageReferences = (
 				1DD39EC326B739490098D299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6991304826D7740C007DBC74 /* XCRemoteSwiftPackageReference "MessageKit" */,
 			);
 			productRefGroup = 1D7532A626835525002D9075 /* Products */;
 			projectDirPath = "";
@@ -186,7 +236,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DC2838626BF177600E02A7B /* RestaurantTableViewCell.swift in Sources */,
-				1D7532AD26835525002D9075 /* ViewController.swift in Sources */,
+				6991304526D76964007DBC74 /* MessageViewController.swift in Sources */,
+				1D7532AD26835525002D9075 /* LoginViewController.swift in Sources */,
+				6991304726D77276007DBC74 /* ChatViewController.swift in Sources */,
 				1D7532A926835525002D9075 /* AppDelegate.swift in Sources */,
 				1D9F533B26B6096D00F0EA0F /* Utilities.swift in Sources */,
 				1D9E71F826BC0BE800764832 /* TableViewController.swift in Sources */,
@@ -408,6 +460,14 @@
 				minimumVersion = 8.4.0;
 			};
 		};
+		6991304826D7740C007DBC74 /* XCRemoteSwiftPackageReference "MessageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MessageKit/MessageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -450,6 +510,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1DD39EC326B739490098D299 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseInAppMessaging-Beta";
+		};
+		6991304926D7740C007DBC74 /* MessageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6991304826D7740C007DBC74 /* XCRemoteSwiftPackageReference "MessageKit" */;
+			productName = MessageKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

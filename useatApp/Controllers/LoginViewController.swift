@@ -1,17 +1,10 @@
-//
-//  ViewController.swift
-//  useatApp
-//
-//  Created by user196211 on 6/23/21.
-//
 
 import UIKit
 import Firebase
 import FirebaseAuth
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     @IBOutlet weak var iconView: UIImageView!
     @IBOutlet weak var passwordTextField: UITextField!
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var assosiationSignUpbutton: UIButton!
     @IBOutlet weak var resturantSignUpButton: UIButton!
@@ -31,9 +24,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func loginTapped(_ sender: UIButton!) {
-        
-        // TODO: Validate Text Fields
-            
+                    
             // Create cleaned versions of the text field
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -43,29 +34,20 @@ class ViewController: UIViewController {
                 
                 if error != nil {
                     // Couldn't sign in
-                 //   self.errorLabel.text = error!.localizedDescription
-                   // self.errorLabel.alpha = 1
                     print("nil")
                 }
                 else {
                     print("login successfuly")
-           //         self.transitionToHome();
+                    self.transitionToHome();
                 }
             }
     
   }
-//    func transitionToHome() {
-//        let newViewController = TableViewController()
-//        self.navigationController?.pushViewController(newViewController, animated: true)
-//
-//    }
-    
-//    func transition(Sender: UIButton!) {
-//        let secondViewController:SecondViewController = SecondViewController()
-//
-//        self.presentViewController(secondViewController, animated: true, completion: nil)
-//
-//     }
+    func transitionToHome() {
+        let newViewController = TableViewController()
+        self.navigationController?.pushViewController(newViewController, animated: true)
+
+    }
     
     
 }

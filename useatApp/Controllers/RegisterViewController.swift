@@ -1,9 +1,3 @@
-//
-//  RegisterViewController.swift
-//  useatApp
-//
-//  Created by user196211 on 7/8/21.
-//
 
 import UIKit
 import Firebase
@@ -95,7 +89,6 @@ class RegisterViewController: UIViewController {
                     //  }
                //       else {
                           
-                          // User was created successfully, now store the name
                           let db = Firestore.firestore()
                           
                         db.collection("users").addDocument(data: ["name":name,"aboutMe": aboutMe
